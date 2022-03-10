@@ -4,20 +4,21 @@ console.log('JS OK!');
 // calcola la somma di tutte le cifre che compongono il numero
 
 const calculate = document.getElementById('sum-btn');
-let inputNumber = parseInt(document.getElementById('inputNumber')).value;
-let finalResult = document.getElementById('result');
 
 
 calculate.addEventListener('click', function () {
 
-    let numbers = inputNumber;
-    sum = 0;
+    let inputNumber = parseInt(document.getElementById('inputNumber'));
+    let value = inputNumber.value;
+    let sum = 0;
+    console.log(value);
 
-    while (numbers) {
-        sum += numbers % 10;
-        numbers = Math.floor(numbers / 10);
+    while (value) {
+        sum += value % 10;
+        value = Math.floor(value / 10);
     }
 
-    let theResult = finalResult;
-    theResult.value = sum;
+    let finalResult = document.getElementById('result');
+    finalResult.value = sum;
+
 })
