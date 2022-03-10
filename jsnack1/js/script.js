@@ -4,6 +4,9 @@ console.log('JS OK!');
 // chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
 
 let userName = document.getElementById('userName');
+
+let access = document.getElementById('access');
+
 const btnAccess = document.getElementById('btnAccess');
 
 const invitati = ["aldo", "giovanni", "giacomo", "al", "john", "jack"];
@@ -31,8 +34,16 @@ btnAccess.addEventListener('click', function () {
 
     if (vaildName) {
         console.log('Benvenuto alla festa!!')
+        access.style.color = 'green';
+        access.style.fontSize = '40';
+        access.style.textAlign = 'center';
+        access.innerText = `Benvenuto alla festa!!`
     } else {
-        console.log('Mi dispice, ma non sei sulla lista!')
+        console.log('Mi dispiace ma, non sei sulla lista!')
+        access.style.color = 'crimson';
+        access.style.fontSize = '40';
+        access.style.textAlign = 'center';
+        access.innerText = `Mi dispiace ma, non sei sulla lista!`
     }
 
 

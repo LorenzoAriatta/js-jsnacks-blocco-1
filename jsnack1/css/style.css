@@ -4,3 +4,41 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
+body {
+    background-color: rgb(13, 14, 48);
+}
+
+.container {
+    width: 50%;
+    margin: 100px auto;
+}
+
+#title {
+    margin-top: 50px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 1000px;
+    opacity: 0.8;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 50px;
+}
+
+#btnAccess {
+    background: orange;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+}
