@@ -3,8 +3,8 @@ console.log('JS OK!');
 // Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero
 // se è dispari inseriscilo nell’array.
 
-const evenHtml = document.getElementById('Even');
-const oddsHtml = document.getElementById('Odds');
+const even = document.getElementById('Even');
+const odds = document.getElementById('Odds');
 
 
 const oddsNumbers = [];
@@ -19,13 +19,17 @@ for (let i = 0; i < 6; i++) {
 
         oddsNumbers.push(askedNumber);
         console.log(`Numeri dispari inseriti: ${askedNumber}`);
-        oddsHtml.innerText = `Numeri dispari inseriti: ${oddsNumbers}`
+        odds.style.color = 'crimson';
+        odds.style.fontSize = '40px';
+        odds.innerText = `Numeri dispari inseriti: ${oddsNumbers}`
 
     } else {
 
         evenNumbers.push(askedNumber);
         console.log(`Numeri pari inseriti: ${askedNumber}`);
-        evenHtml.innerText = `Numeri pari inseriti: ${evenNumbers}`;
+        even.style.color = 'green';
+        even.style.fontSize = '40px';
+        even.innerText = `Numeri pari inseriti: ${evenNumbers}`;
 
     }
 

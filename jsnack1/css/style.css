@@ -12,6 +12,9 @@ body {
 .container {
     width: 50%;
     margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #title {
@@ -23,7 +26,7 @@ body {
 }
 
 img {
-    width: 1000px;
+    width: 800px;
     opacity: 0.8;
     border-radius: 20px;
     margin-bottom: 50px;
